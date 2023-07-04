@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bookservice.host:
+    image: ${DOCKER_REGISTRY-}bookservicehost
+    build:
+      context: .
+      dockerfile: BookService.Host/Dockerfile
